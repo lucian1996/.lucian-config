@@ -99,13 +99,6 @@
           "template": "\u0021",
           "type": "root"
         },
-        {
-          "foreground": "#ffffff",
-          "leading_diamond": "\ue0b6",
-          "style": "",
-          "template": "{{ .HostName }} ",
-          "type": "session"
-        },
 
         {
           "foreground": "#37d99e",
