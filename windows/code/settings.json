@@ -20,7 +20,6 @@
     "diffEditorOverview.insertedForeground": "#02b40b",
     "diffEditorOverview.removedForeground": "#a10000",
     "sideBar.background": "#1c1c1c",
-
     // "editor.background": "#19191c",
     // "tab.inactiveBackground": "#1f1f24",
     // "editorGroupHeader.tabsBackground": "#19191c",
@@ -101,7 +100,6 @@
   "editor.suggestOnTriggerCharacters": false,
   "editor.wordBasedSuggestions": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "workbench.iconTheme": "material-icon-theme",
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -122,7 +120,11 @@
   "window.titleBarStyle": "custom",
   "workbench.editor.enablePreviewFromCodeNavigation": true,
   "workbench.editor.enablePreviewFromQuickOpen": true,
-  "errorLens.enabledDiagnosticLevels": ["warning", "info", "error"],
+  "errorLens.enabledDiagnosticLevels": [
+    "warning",
+    "info",
+    "error"
+  ],
   "helium-icon-theme.folders.color": "#26a69a",
   "css.lint.unknownAtRules": "ignore",
   "workbench.editor.pinnedTabSizing": "compact",
@@ -188,7 +190,6 @@
   "material-icon-theme.activeIconPack": "react_redux",
   "terminal.integrated.enablePersistentSessions": false,
   "terminal.integrated.env.linux": {},
-
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -219,7 +220,10 @@
     },
     "Arch (WSL)": {
       "path": "C:\\Windows\\System32\\wsl.exe",
-      "args": ["-d", "Arch"]
+      "args": [
+        "-d",
+        "Arch"
+      ]
     }
   },
   "typeScriptWizard.hiddenTips": [
@@ -256,7 +260,6 @@
     "editor.defaultFormatter": "vscode.css-language-features"
   },
   "git.openRepositoryInParentFolders": "always",
-  "workbench.colorTheme": "JetBrains Rider New UI Dark",
   "quokka.showCodeLensInOutputChannel": false,
   "quokka.untrustedWorkspaceBehavior": "Always allow",
   "emmet.includeLanguages": {
@@ -266,25 +269,31 @@
   "console-ninja.featureSet": "Community",
   "editor.cursorSurroundingLines": 5,
   "vim.vimrc.enable": true,
-  "vim.vimrc.path": "C:\\Users\\Lucian\\luci.config\\.vimrc",
+  "vim.vimrc.path": "C:\\Users\\Lucian\\.lucian-config\\.vimrc",
   "workbench.activityBar.visible": false,
   "vue.blocks": {},
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["u"],
-      "commands": ["undo"]
+      "before": [
+        "u"
+      ],
+      "commands": [
+        "undo"
+      ]
     },
     {
-      "before": ["<C-r>"],
-      "commands": ["redo"]
+      "before": [
+        "<C-r>"
+      ],
+      "commands": [
+        "redo"
+      ]
     }
   ],
   "window.zoomLevel": 2,
   "welcomePage": "#fff",
-  "window.menuBarVisibility": "compact",
-
   "background.fullscreen": {
     "opacity": 0.91, // 0.85 ~ 0.95 recommended
     "size": "cover", // also css, `cover` to self-adaption (recommended)，or `contain`、`200px 200px`
@@ -293,6 +302,9 @@
   },
   "workbench.startupEditor": "none",
   "window.restoreWindows": "one",
+  "workbench.colorTheme": "Moegi Dark",
+  "window.menuBarVisibility": "compact",
   "workbench.layoutControl.enabled": false,
-  "window.commandCenter": false
+  "window.commandCenter": false,
+  "workbench.iconTheme": "material-icon-theme"
 }
