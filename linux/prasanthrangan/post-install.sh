@@ -69,6 +69,7 @@ yay -S vulkan-radeon --noconfirm || exit_on_error "Failed to install vulkan-rade
 yay -S lib32-vulkan-radeon --noconfirm || exit_on_error "Failed to install lib32-vulkan-radeon"
 yay -S steam || exit_on_error --noconfirm "Failed to install steam" || exit_on_error "Failed to install Steam"
 yay -S deluge || exit_on_error --noconfirm "Failed to install deluge" || exit_on_error "Failed to install Steam"
+yay -S deluge-gtk || exit_on_error --noconfirm "Failed to install deluge-gtk" || exit_on_error "Failed to install Steam"
 echo "Default Applications Installed."
 
 # Install Xbox Controller Support
@@ -86,7 +87,7 @@ echo "Security Configured."
 
 # Install and Configure Qemu Virtual Machine
 echo "Installing and Configuring QEMU Virtual Machine..."
-yay -S qemu qemu-arch-extra virt-manager dnsmasq bridge-utils ebtables iptables --noconfirm || exit_on_error "Failed to install QEMU and additional packages"
+yay -S qemu-full qemu-arch-extra virt-manager dnsmasq bridge-utils ebtables iptables --noconfirm || exit_on_error "Failed to install QEMU and additional packages"
 # Enable and start libvirtd service
 sudo systemctl enable libvirtd.service || exit_on_error "Failed to enable libvirtd service"
 sudo systemctl start libvirtd.service || exit_on_error "Failed to start libvirtd service"
