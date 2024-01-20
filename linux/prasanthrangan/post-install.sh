@@ -60,7 +60,7 @@ echo "NeoVim Installed."
 # Install Default Applications
 echo "Installing Default Applications..."
 yay -S htop-git --noconfirm || exit_on_error "Failed to install htop-git"
-yay -S vlc-git --noconfirm || exit_on_error "Failed to install vlc-git"
+yay -S vlc --noconfirm || exit_on_error "Failed to install vlc-git"
 yay -S obsidian --noconfirm || exit_on_error "Failed to install obsidian"
 yay -S discord --noconfirm || exit_on_error "Failed to install discord"
 yay -S discord-screenaudio --noconfirm || exit_on_error "Failed to install discord-screenaudio"
