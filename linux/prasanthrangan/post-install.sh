@@ -13,7 +13,7 @@ echo "========================================"
 # Configure Userfiles 
 echo "Configuring User Files..."
 cp -rf ./hypr/* ~/.config/hypr/ || exit_on_error "Failed to copy hypr configuration"
-cp -rf ./Code/* ~/.config/Code/User || exit_on_error "Failed to copy Code configuration"
+# cp -rf ./Code/* ~/.config/Code/User || exit_on_error "Failed to copy Code configuration"
 echo "User Files Configured."
 
 # Remove unused themes
@@ -46,7 +46,7 @@ echo "Development Dependencies Installed."
 
 # install and configure OBS Virtual Camera
 echo "Configuring OBS Virtual Camera..."
-yay -S v412loopback --noconfirm || exit_on_error "Failed to install v412loopback"
+yay -S v4l2loopback-dkms-git --noconfirm || exit_on_error "Failed to install v412loopback"
 yay -S obs-git --noconfirm || exit_on_error "Failed to install obs-git"
 yay -S obs-backgroundremoval --noconfirm || exit_on_error "Failed to install obs-backgroundremoval"
 echo "OBS Virtual Camera Configured."
@@ -73,7 +73,7 @@ echo "Default Applications Installed."
 
 # Install Xbox Controller Support
 echo "Installing Xbox Controller Support..."
-yay -S xpadneo-dkms --nonconfirm || exit_on_error "Failed to install xpadneo"
+yay -S xpadneo-dkms || exit_on_error "Failed to install xpadneo"
 echo "Xbox Controller Support Installed."
 
 # Configure Security
@@ -108,7 +108,7 @@ echo "VSCode Extensions Installed."
 
 # Finilize Setup
 echo "Finalizing Setup..."
-sudo timeshift --create --tags S --comments "Setup Complete" || exit_on_error "Failed to create a timeshift snapshot (Setup Complete)"
+sudo timeshift --create --comments "Setup Complete" || exit_on_error "Failed to create a timeshift snapshot (Setup Complete)"
 echo "Setup Complete. Timeshift Snapshot Created."
 
 echo "========================================"
