@@ -86,7 +86,7 @@ echo "Security Configured."
 
 # Install and Configure Qemu Virtual Machine
 echo "Installing and Configuring QEMU Virtual Machine..."
-sudo pacman -S qemu qemu-arch-extra virt-manager dnsmasq bridge-utils ebtables iptables --noconfirm || exit_on_error "Failed to install QEMU and additional packages"
+yay -S qemu qemu-arch-extra virt-manager dnsmasq bridge-utils ebtables iptables --noconfirm || exit_on_error "Failed to install QEMU and additional packages"
 # Enable and start libvirtd service
 sudo systemctl enable libvirtd.service || exit_on_error "Failed to enable libvirtd service"
 sudo systemctl start libvirtd.service || exit_on_error "Failed to start libvirtd service"
